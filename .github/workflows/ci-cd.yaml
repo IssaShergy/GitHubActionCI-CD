@@ -46,7 +46,7 @@ jobs:
 
   deploy: # any name
     runs-on: ubuntu-latest #يحدد نظام التشغيل الذي ستعمل عليه المهمة.
-    needs: test_and_build # لازم يكون نفس اسم المهة job
+    needs: test_and_build #  start after this
     steps:
       - name: download artifacts # اسم توضيحي للخطوة
         uses: actions/download-artifact@v4 
