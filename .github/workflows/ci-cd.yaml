@@ -1,7 +1,7 @@
 name: HTTP APP workflow
 
 on:
-  push:
+  push: #event
     branches:
       - main
       - master
@@ -13,7 +13,7 @@ on:
 
 
 jobs:
-  test_and_build: 
+  test_and_build: #any name
     runs-on: ubuntu-latest
 
     steps:
